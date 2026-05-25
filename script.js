@@ -10,7 +10,7 @@ const searchResults = document.querySelector(".search-results");
 const searchItems = [
   { title: "StorePilot", category: "Platform", url: "services/storepilot-workforce.html" },
   { title: "Edge Market ERP", category: "Platform", url: "services/edge-market-erp.html" },
-  { title: "Media", category: "Projects", url: "#trending-now" },
+  { title: "Vestano Media", category: "Platform", url: "services/vestano-media.html" },
   { title: "360 Retail & Supermarket Consulting", category: "Services", url: "services/retail-supermarket-consulting.html" },
   { title: "Automated Auditing, Tax, & Compliance Solutions", category: "Services", url: "services/auditing-tax-compliance.html" },
   { title: "MIS & Business Diagnostic Analytics", category: "Services", url: "services/mis-analytics.html" },
@@ -30,6 +30,7 @@ const searchItems = [
   { title: "Open Roles & Job Search", category: "Careers", url: "careers/job-search.html" },
   { title: "Life at Vestano", category: "Careers", url: "careers/life-at-vestano.html" },
   { title: "Career Paths", category: "Careers", url: "careers/career-paths.html" },
+  { title: "Mission and Vision 2036", category: "About us", url: "#mission-vision" },
   { title: "About Vestano", category: "About us", url: "#about-details" },
   { title: "Leadership, directors, and founder", category: "About us", url: "leadership.html" },
   { title: "Our purpose: Driven by unmatching expertise since 2010", category: "About us", url: "#about-purpose" },
@@ -222,6 +223,13 @@ const assistantTopics = [
     actions: [{ label: "Explore ERP", url: "/services/edge-market-erp.html" }],
   },
   {
+    id: "vestano-media",
+    keys: ["media", "digital marketing", "marketing", "meta ads", "facebook marketing", "instagram marketing", "social media", "content creation", "graphic design", "lead generation", "brand promotion"],
+    reply:
+      "Vestano Media provides digital marketing solutions for brand presence, customer engagement, and business growth. Services include social media management, Meta ads and campaign management, content creation, graphic designing, AI video creation, brand promotion, lead generation, audience targeting, creative campaign planning, and Instagram and Facebook marketing. The focus is retail-friendly campaigns, stronger online visibility, quality leads, and consistent digital identity.",
+    actions: [{ label: "View media", url: "/services/vestano-media.html" }],
+  },
+  {
     id: "audit-compliance",
     keys: ["audit", "auditing", "tax", "compliance", "gst", "itc", "invoice", "risk", "shrinkage"],
     reply:
@@ -280,6 +288,13 @@ const assistantTopics = [
       { label: "About Vestano", url: "/index.html#about-details" },
       { label: "View services", url: "/index.html?menu=services" },
     ],
+  },
+  {
+    id: "mission-vision",
+    keys: ["mission", "vision", "strategic pillars", "2036", "client value", "leadership excellence", "digital transformation", "operational excellence", "sustainable impact"],
+    reply:
+      "Vestano's vision is to become a globally respected and trusted business transformation organization, setting new standards of excellence across industries by 2036. The mission is to deliver innovative solutions, build exceptional talent, leverage technology, and create operational excellence that generates sustainable value for clients, employees, and communities. The strategic pillars are Client Value and Growth, People and Leadership Excellence, Innovation and Digital Transformation, Operational Excellence, and Trust and Sustainable Impact.",
+    actions: [{ label: "Mission & Vision", url: "/index.html#mission-vision" }],
   },
   {
     id: "clients",
